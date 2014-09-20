@@ -10,6 +10,11 @@
 		79C4018119CDCA2000D6F4E2 /* ITunesSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79C4018B19CDCA2000D6F4E2 /* ITunesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4018A19CDCA2000D6F4E2 /* ITunesSwiftTests.swift */; };
 		79C4019E19CDD41C00D6F4E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C4019D19CDD41C00D6F4E2 /* Alamofire.framework */; };
+		79C401A019CDD54C00D6F4E2 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4019F19CDD54C00D6F4E2 /* Media.swift */; };
+		79C401A219CDD75300D6F4E2 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A119CDD75300D6F4E2 /* Entity.swift */; };
+		79C401A419CDD83100D6F4E2 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A319CDD83100D6F4E2 /* Attribute.swift */; };
+		79C401A619CDD85F00D6F4E2 /* ITunesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */; };
+		79C401AA19CDD92800D6F4E2 /* ITunesSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		79C4018919CDCA2000D6F4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C4018A19CDCA2000D6F4E2 /* ITunesSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesSwiftTests.swift; sourceTree = "<group>"; };
 		79C4019D19CDD41C00D6F4E2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Externals/Alamofire/build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		79C4019F19CDD54C00D6F4E2 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		79C401A119CDD75300D6F4E2 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		79C401A319CDD83100D6F4E2 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesSwift.swift; sourceTree = "<group>"; };
+		79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesSearchApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */,
+				79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */,
+				79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */,
+				79C4019F19CDD54C00D6F4E2 /* Media.swift */,
+				79C401A119CDD75300D6F4E2 /* Entity.swift */,
+				79C401A319CDD83100D6F4E2 /* Attribute.swift */,
 				79C4017E19CDCA2000D6F4E2 /* Supporting Files */,
 			);
 			path = ITunesSwift;
@@ -200,6 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C401AA19CDD92800D6F4E2 /* ITunesSearchApi.swift in Sources */,
+				79C401A419CDD83100D6F4E2 /* Attribute.swift in Sources */,
+				79C401A619CDD85F00D6F4E2 /* ITunesSwift.swift in Sources */,
+				79C401A219CDD75300D6F4E2 /* Entity.swift in Sources */,
+				79C401A019CDD54C00D6F4E2 /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +322,7 @@
 		79C4018F19CDCA2000D6F4E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -315,12 +336,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		79C4019019CDCA2000D6F4E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
