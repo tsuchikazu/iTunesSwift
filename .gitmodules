@@ -1,0 +1,3 @@
+[submodule "Externals/Alamofire"]
+	path = Externals/Alamofire
+	url = git@github.com:Alamofire/Alamofire.git
