@@ -39,8 +39,6 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
                 ITunesSwift.lookup(selectedRow["trackId"].asInt!).request() { (result ,error) in
                     var resultJson: JSON = JSON.parse(result!)
                     var selectedRowJson: JSON = resultJson["results"][0]
-                    println("segue")
-                    println(selectedRowJson)
                     (segue.destinationViewController as DetailViewController).detailJson = selectedRowJson
                 }
             }
@@ -54,8 +52,6 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println("row")
-        println(searchResultJson?["resultCount"])
         if let count = searchResultJson?["resultCount"].asInt {
             return count
         }
@@ -92,7 +88,6 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
         
         ITunesSwift.find(Media.Music).by(searchBar.text).request() { (result, error) in
             self.searchResultJson = JSON.parse(result!)
-            println(self.searchResultJson)
             self.tableView.reloadData()
         }
     }

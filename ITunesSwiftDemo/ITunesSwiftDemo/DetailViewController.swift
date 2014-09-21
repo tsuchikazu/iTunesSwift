@@ -32,8 +32,6 @@ class DetailViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println("row")
-        println(detailJson)
         if let count = detailJson?.length {
             return count
         }
