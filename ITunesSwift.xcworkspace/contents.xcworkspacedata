@@ -5,7 +5,7 @@
       location = "container:ITunesSwift.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ITunewSwiftDemo/ITunesSwiftDemo/ITunesSwiftDemo.xcodeproj">
+      location = "group:ITunesSwiftDemo/ITunesSwiftDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Externals/Alamofire/Alamofire.xcodeproj">
