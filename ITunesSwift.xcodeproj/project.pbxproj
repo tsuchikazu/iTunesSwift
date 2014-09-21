@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7981F7E919CEC9A200B2414C /* ITunesLookupApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981F7E819CEC9A200B2414C /* ITunesLookupApi.swift */; };
 		79C4018119CDCA2000D6F4E2 /* ITunesSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79C4018B19CDCA2000D6F4E2 /* ITunesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4018A19CDCA2000D6F4E2 /* ITunesSwiftTests.swift */; };
 		79C4019E19CDD41C00D6F4E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C4019D19CDD41C00D6F4E2 /* Alamofire.framework */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7981F7E819CEC9A200B2414C /* ITunesLookupApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesLookupApi.swift; sourceTree = "<group>"; };
 		79C4017B19CDCA2000D6F4E2 /* ITunesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ITunesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C4017F19CDCA2000D6F4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesSwift.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */,
 				79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */,
 				79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */,
+				7981F7E819CEC9A200B2414C /* ITunesLookupApi.swift */,
 				79C4019F19CDD54C00D6F4E2 /* Media.swift */,
 				79C401A119CDD75300D6F4E2 /* Entity.swift */,
 				79C401A319CDD83100D6F4E2 /* Attribute.swift */,
@@ -219,6 +222,7 @@
 				79C401A419CDD83100D6F4E2 /* Attribute.swift in Sources */,
 				79C401A619CDD85F00D6F4E2 /* ITunesSwift.swift in Sources */,
 				79C401A219CDD75300D6F4E2 /* Entity.swift in Sources */,
+				7981F7E919CEC9A200B2414C /* ITunesLookupApi.swift in Sources */,
 				79C401A019CDD54C00D6F4E2 /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				79C4019019CDCA2000D6F4E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79C4019119CDCA2000D6F4E2 /* Build configuration list for PBXNativeTarget "ITunesSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				79C4019319CDCA2000D6F4E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

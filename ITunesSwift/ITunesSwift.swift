@@ -15,3 +15,9 @@ public func find(media: Media) -> ITunesSearchApi {
 public func find(entity: Entity) -> ITunesSearchApi {
     return ITunesSearchApi(entity: entity)
 }
+public func lookup(id: Int) -> ITunesLookupApi {
+    return ITunesLookupApi(idName: "id", id: id)
+}
+public func lookup(idName: String, id: Int) -> ITunesLookupApi {
+    return ITunesLookupApi(idName: idName, id: id)
+}
