@@ -2,8 +2,8 @@
 //  ITunesLookupApi.swift
 //  ITunesSwift
 //
-//  Created by 土屋 和良 on 2014/09/21.
-//  Copyright (c) 2014年 tsuchikazu. All rights reserved.
+//  Created by Kazuyoshi Tsuchiya on 2014/09/21.
+//  Copyright (c) 2014 tsuchikazu. All rights reserved.
 //
 
 import Foundation
