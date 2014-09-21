@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Externals/Alamofire/Alamofire.xcodeproj">
+      location = "container:ITunesSwift.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:ITunesSwift.xcodeproj">
+      location = "group:ITunewSwiftDemo/ITunesSwiftDemo/ITunesSwiftDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Externals/Alamofire/Alamofire.xcodeproj">
    </FileRef>
 </Workspace>
