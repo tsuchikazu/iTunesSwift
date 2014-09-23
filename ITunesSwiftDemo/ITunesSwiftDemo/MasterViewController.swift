@@ -36,7 +36,7 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 var selectedRow = searchResultJson!["results"][indexPath.row]
-                ITunesSwift.lookup(selectedRow["trackId"].asInt!).request() { (result ,error) in
+                iTunesApi.lookup(selectedRow["trackId"].asInt!).request() { (result ,error) in
                     var resultJson: JSON = JSON.parse(result!)
                     var selectedRowJson: JSON = resultJson["results"][0]
                     (segue.destinationViewController as DetailViewController).detailJson = selectedRowJson
@@ -86,7 +86,7 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         self.searchBar?.resignFirstResponder()
         
-        ITunesSwift.find(Media.Music).by(searchBar.text).request() { (result, error) in
+        iTunesApi.find(Media.Music).by(searchBar.text).request() { (result, error) in
             self.searchResultJson = JSON.parse(result!)
             self.tableView.reloadData()
         }

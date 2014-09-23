@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7981F7E919CEC9A200B2414C /* ITunesLookupApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981F7E819CEC9A200B2414C /* ITunesLookupApi.swift */; };
+		7981F85C19D14F3F00B2414C /* ITunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981F85B19D14F3F00B2414C /* ITunesApi.swift */; };
 		79C4018119CDCA2000D6F4E2 /* ITunesSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79C4018B19CDCA2000D6F4E2 /* ITunesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4018A19CDCA2000D6F4E2 /* ITunesSwiftTests.swift */; };
 		79C4019E19CDD41C00D6F4E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C4019D19CDD41C00D6F4E2 /* Alamofire.framework */; };
 		79C401A019CDD54C00D6F4E2 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4019F19CDD54C00D6F4E2 /* Media.swift */; };
 		79C401A219CDD75300D6F4E2 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A119CDD75300D6F4E2 /* Entity.swift */; };
 		79C401A419CDD83100D6F4E2 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A319CDD83100D6F4E2 /* Attribute.swift */; };
-		79C401A619CDD85F00D6F4E2 /* ITunesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */; };
 		79C401AA19CDD92800D6F4E2 /* ITunesSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7981F7E819CEC9A200B2414C /* ITunesLookupApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesLookupApi.swift; sourceTree = "<group>"; };
+		7981F85B19D14F3F00B2414C /* ITunesApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesApi.swift; sourceTree = "<group>"; };
 		79C4017B19CDCA2000D6F4E2 /* ITunesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ITunesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C4017F19CDCA2000D6F4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesSwift.h; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		79C4019F19CDD54C00D6F4E2 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		79C401A119CDD75300D6F4E2 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		79C401A319CDD83100D6F4E2 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
-		79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesSwift.swift; sourceTree = "<group>"; };
 		79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesSearchApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				79C4018019CDCA2000D6F4E2 /* ITunesSwift.h */,
-				79C401A519CDD85F00D6F4E2 /* ITunesSwift.swift */,
+				7981F85B19D14F3F00B2414C /* ITunesApi.swift */,
 				79C401A919CDD92800D6F4E2 /* ITunesSearchApi.swift */,
 				7981F7E819CEC9A200B2414C /* ITunesLookupApi.swift */,
 				79C4019F19CDD54C00D6F4E2 /* Media.swift */,
@@ -218,9 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7981F85C19D14F3F00B2414C /* ITunesApi.swift in Sources */,
 				79C401AA19CDD92800D6F4E2 /* ITunesSearchApi.swift in Sources */,
 				79C401A419CDD83100D6F4E2 /* Attribute.swift in Sources */,
-				79C401A619CDD85F00D6F4E2 /* ITunesSwift.swift in Sources */,
 				79C401A219CDD75300D6F4E2 /* Entity.swift in Sources */,
 				7981F7E919CEC9A200B2414C /* ITunesLookupApi.swift in Sources */,
 				79C401A019CDD54C00D6F4E2 /* Media.swift in Sources */,

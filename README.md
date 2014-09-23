@@ -33,20 +33,20 @@ Open the "Build Phases" panel, expand the "Link Binary with Libraries" group, ad
 import ITunesSwift
 
 // Search All
-ITunesSwift.findAll().by("search keyword").request { (result ,  error) in
+iTunesApi.findAll().by("search keyword").request { (result ,  error) in
     println(result)
 }
 // Search albums (Specifiable all media and entity. Media.Music, Entity.MusicArtist, Entity.Software etc...)
-ITunesSwift.find(Entity.Album).by("search keyword").request { (result ,  error) in
+iTunesApi.find(Entity.Album).by("search keyword").request { (result ,  error) in
     println(result)
 }
 
 // With Attributes
-ITunesSwift.find(Entity.Album).by(Attribute.ArtistTerm, term: "artist name").request() { (result , error) in
+iTunesApi.find(Entity.Album).by(Attribute.ArtistTerm, term: "artist name").request() { (result , error) in
     println(result)
 }
 // With limit
-ITunesSwift.find(Entity.Album).by("search keyword").limit(10).request { (result ,  error) in
+iTunesApi.find(Entity.Album).by("search keyword").limit(10).request { (result ,  error) in
     println(result)
 }
 ```
@@ -56,12 +56,12 @@ ITunesSwift.find(Entity.Album).by("search keyword").limit(10).request { (result 
 import ITunesSwift
 
 // Lookup by simple id
-ITunesSwift.lookup(909253).request() { (result, error) in
+iTunesApi.lookup(909253).request() { (result, error) in
     println(result)
 }
 
 // Lookup by AMG artist ID
-ITunesSwift.lookup("amgArtistId", 123).request() { (result, error) in
+iTunesApi.lookup("amgArtistId", 123).request() { (result, error) in
     println(result)
 }
 ```
