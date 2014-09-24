@@ -67,6 +67,20 @@ iTunesApi.lookup("amgArtistId", 123).request() { (result, error) in
 ```
 
 
+## Demo
+
+1. Clone `iTunesSwift` repository, and run `git submodule updaate` command.
+
+    ```
+    $ git clone git@github.com:tsuchikazu/iTunesSwift.git
+    $ cd iTunesSwift/
+    $ git submodule update --init --recursive
+    $ open ITunesSwift.xcworkspace/
+    ```
+
+1. Select `ITunesSwiftDemo` scheme and run!
+
+
 ## License
 
 iTunesSwift is released under an MIT license. See LICENSE for more information.
